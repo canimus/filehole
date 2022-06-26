@@ -2,6 +2,7 @@ clean:
 	@rm -rf ./.pytest_cache
 	@rm -rf ./dist
 	@rm -rf ./src/*.egg-info
+	@find . | grep "__pycache__" | xargs rm -rf
 	@echo "OK"
 
 install:
